@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+</head>
+<body>
+        <header>
+             <!-- ------------------------------一级导航开始 ---------------------------------->
+            <div class="header-top">
+                <div class="wrap">
+                    <div class="logo">
+                        <a href="#"><img src="../img/logo_icon.png" alt="" style="width:95px"></a>
+                    </div>
+                    <ul class="header-top-nav">
+                        <li class="t—n-li left margin15">
+                            <a class="t—n-li-a1" href="../html/Login.html" style="margin:0 5px">登录</a>
+                            <a class="t—n-li-a1" href="../html/register.html">注册</a>
+                        </li>
+                        <li class="line left color_666">|</li>
+                        <li>
+                            <a href="#" class="header-wrapper left margin15 color_666">购物车</a>
+                            <!--购物车下拉列表开始-->
+                            <div class="header-wrapper-1 fdDiv">
+                              <div class="shop" ><a href="#" style="color:#fff">你的购物车暂时没有商品...</a></div>
+                              <div class="add-shop"><a href="#" style="color:#fff">快去抢购良仓商品吧！</a> </div>
+                            <!--购物车下拉列表结束-->
+                        </li>
+                        <li class="line left color_666">|</li>
+                        <li class="left margin15 ">
+                          <a href="#" target="_blank" class="color_666 posr">消息</a>
+                          <!-- <a href="https://www.iliangcang.com/i/message/" target="_blank">消息</a> -->
+                          <!--信息下拉列表开始-->
+                          <div class="header-hide  fdDiv"> 
+                              <a href="#" class="block" style="color:#fff"><span>动态<small class="right">0</small></span></a> 
+                              <a href="#" class="block" style="color:#fff"><span>评论<small class="right">0</small></span></a> 
+                              <a href="#" class="block" style="color:#fff"><span>私信<small class="right">0</small></span></a> 
+                              <a href="#" class="block" style="color:#fff"><span>粉丝<small class="right">0</small></span></a> 
+                              <a href="#" class="block" style="color:#fff"><span>喜欢<small class="right">0</small></span></a> 
+                              <a href="#" class="block" style="color:#fff"><span>通知<small class="right">0</small></span></a>
+                          </div>
+                          <!--信息下拉列表结束-->
+                        </li>
+                        <li class="line left color_666">|</li>
+                        <li class="add left margin15 "><a class="shade color_666" href="#">添加良品</a></li>
+                        <li class="add left margin15"><a class="shade color_666" href="#">资质证照 / 协议规则</a></li>
+                </div>
+            </div>
+            <!--------------------------- 一级导航结束 ------------------------------------=--->
+
+
+            <!-- ------------------------------二级导航开始 ---------------------------------->
+            <div class="header-section">
+                <ul class="fl">
+                    <li id="homepage"><a href="./index1.html" class="">首页</a></li>
+                    <!--------------------------- 二级导航商店 ------------------------------------=--->
+                    <li class="subLi"><a href="#" class="subLi3"> 商店</a>
+                    <div class="submHide2 store" style="display:none;">
+                        <div style="width:750px;heght:450px;" class="store_dt left">
+                                <!-- <dt style="height:62px;width:122px;margin-left:-5px; float: left; margin-bottom:20px;" >
+                                        <div class="cat_img" style="margin-top:23px;margin-left:17px;margin-right:67px;padding-bottom:36px;width:40px;height:54px;">
+                                            <img src="../img/23687.png" style="width:40px;height:40px">
+                                            <div class="cat_name" style="width:50px;height:20px;margin-top:-30px;margin-left:6px;font-size:14px;">
+                                                <a href="#" style="color:rgb(97, 96, 96);font-weight:bold">家居</a>
+                                            </div>
+                                        </div>
+                                </dt> -->
+                        </div>
+                        <!---------------------------------------- 左边结束------------------------- -->
+                       
+                        <div class="storeRight fr">
+                            <a href="#" target="_blank">
+                                <dl>
+                                    <dt>
+                                        <img
+                                            alt="新视线： 2015年7月刊"
+                                            title="新视线： 2015年7月刊"
+                                            src="../img/315574.jpg"></dt>
+                                        <dd>新视线：&nbsp; 2015年7月刊</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                    </div>
+
+
+                    </li>
+                    <!--------------------------- 二级导航杂志 ------------------------------------=--->
+                    <li class="subLi" >
+                            <a href="#" class="subLi1 s1">杂志
+                              <div class="submHide" id="s1" >
+                                  <a href="#" style="margin-left: -60px;">趣物</a>
+                                  <a href="#">数码</a>
+                                  <a href="#">汽车</a>
+                                  <a href="#">文化</a>
+                                  <a href="#">时尚</a>
+                                  <a href="#">美食</a>
+                                  <a href="#">建筑</a>
+                                  <a href="#">空间</a>
+                                  <a href="#">圈子</a>
+                                  <a href="#">清单</a>
+                                  <a href="#"style="margin:0">活动</a>
+                                  <a href="#">视频</a>
+                                </div>
+                            </a>
+                    </li>
+                      <!--------------------------- 二级导航分享 ------------------------------------=--->
+                      <li class="subLi" >
+                            <a href="#" class="subLi1 s2">分享
+                              <div class="submHide" id="s2" >
+                                    <a href="#" style="margin-left: -60px;">男士</a> 
+                                    <a href="#">家居</a>  
+                                    <a href="#">数码</a>   
+                                    <a href="#">工具</a>  
+                                    <a href="#">玩具</a>   
+                                    <a href="#">美容</a>  
+                                    <a href="#">孩子</a>    
+                                    <a href="#">宠物</a>     
+                                    <a href="#">饮食</a>     
+                                    <a href="#">运动</a> 
+                                    <a href="#" style="margin:0">文化</a>   
+                                    <a href="#">女士</a>  
+                                </div>
+                            </a>
+                    </li>
+                    <li><a href="#">达人</a></li>
+                     <!------------------------------ 百度搜素接口 ------------------------------------------->
+                     <li class="subLi" style="float:right;">
+                        <img src="../img/12.png" style="width: 20px;position: absolute;top:14px;right: 258px;">
+                        <a class="search subLi1" style="width: 150px;">
+                            <input type="text" id="search_baidu">
+                            <ul id="list"></ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--------------------------- 二级导航结束 ------------------------------------=--->
+
+            <!----------------------------------------- 首页轮播 start ------------------------>
+            <div class="carousel">
+                <div class="carousel2">
+                    <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="../img/1370.gif" alt=""></div>
+                                <div class="swiper-slide"><img src="../img/1369.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="../img/1367.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../img/1366.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="../img/1352.gif" alt=""></div>
+                            </div>
+                            <!-- 如果需要分页器 -->
+                            <div class="swiper-pagination"></div>
+                            
+                            <!-- 如果需要导航按钮 -->
+                            <div class="swiper-button-prev" ></div>
+                            <div class="swiper-button-next"></div>
+                      
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------首页轮播 end ---------------------------------------->
+        </header>
+        <section >
+            <div class="main">
+                    <div class="section1">
+                         <div class="item1" style="top:0px;left:0px;">
+                                             <a href="#" target="_blank"><img src="../img/32337.png" title=""></a>
+                                         </div>
+                         <div class="item2">
+                                           <a href="#" target="_blank"><img src="../img/32340.jpg" title="" alt=""></a>
+                                         </div>
+                         <div class="item1" style="top:0px;right:0px;">
+                                             <a href="#" target="_blank"><img src="../img/32359.jpg" title="" alt=""></a>
+                                         </div>
+                         <div class="item1" style="bottom:0px;left:0px;">
+                                             <a href="" target="_blank"><img src="../img/32355.jpg" title="" alt=""></a>
+                                         </div>
+                         <div class="item1" style="bottom:0px;right:0px;">
+                                            <a href="" target="_blank"><img src="../img/32336.jpg" title="" alt=""></a>
+                                         </div>
+                     </div>
+                     <!-- -------------------------- 固定导航 --------------------------------------->
+                     <div class="section_img1">
+                         <div class="section_img1_a"></div>
+                         <img src="../img/30892.png" class="">
+                     </div>
+                     <div class="section_img2">
+                         顶部
+                     </div>
+                     <!-- -------------------------- 固定导航结束 --------------------------------------->
+                     <div class="section2">人气良品</div>
+                     <!-- -------------------------- 主体 --------------------------------------->
+                     <div class="section3">
+                         <div class="setion3_1">
+                             <!-- <div class = "item first left" > 
+                                <div class="imgCon" style="height:316px;width:316px;">
+                                    <a href="#" target="_blank">
+                                        <img src="../img/263887.jpg" title="玫瑰灵药甜蜜香薰礼盒 | 世界知名调香师合作研制"></a>
+                                        <a href="#" class="goodsInfo" target="_blank">
+                                            <p class="money">¥298.00</p>
+                                            <p class="tle">玫瑰灵药甜蜜香薰礼盒 | 世界知名调香师合作研制</p>
+                                            <p class="desc">
+                                                玫瑰香与粉晶石的神秘邂逅，让你多攒些恋爱的运气 ...
+                                            </p>
+                                        </a>
+                                </div>
+                                <div class="bar">
+                                    <a class="who" href="#" target="_blank">
+                                        <img src="../img/1500.jpg">观夏SUMMER Lab</a>
+                                        <a href="#" class="goodsFavCount">616 </a>
+                                        <img src="../img/8.png" style="float:right;margin-top: 9px;">
+                                    </div>
+                            </div> -->
+                         </div>
+                     </div>
+            </div>
+        </section>
+         <!-------------------------- footer -------------------------------------------->
+        <footer>
+            <div id="service">
+                    <a href="#"><p class="hand">
+                        <img src="../img/6.png" class="left">
+                        <img src="../img/7.png" class="left" style="margin-top: 3px;">
+                    </p></a>
+                    <div class="slogen">
+                        <dl class="fore1">
+                            <dt><img src="../img/5.png" alt=""></dt>
+                            <dd>
+                                <p class="chinesetop">全球精品</p>
+                                <p class="english">Global Selections</p>
+                            </dd>
+                            <p class="clr"></p>
+                        </dl>
+                        <dl class="fore2">
+                            <dt><img src="../img/3.png" alt=""></dt>
+                            <dd>
+                                <p class="chinesetop">正品保证</p>
+                                <p class="english">Authenticity Guaranteed</p>
+                            </dd>
+                            <p class="clr"></p>
+                        </dl>
+                        <dl class="fore3">
+                            <dt><img src="../img/4.png" alt=""></dt>
+                            <dd>
+                                <p class="chinesetop">全场包邮</p>
+                                <p class="english">Free Delivery</p>
+                            </dd>
+                            <p class="clr"></p>
+                        </dl>
+                        <dl class="fore4">
+                            <dt><img src="../img/2.png" alt=""></dt>
+                            <dd>
+                                <p class="chinesetop ">400-897-6336</p>
+                                <p class="english">工作日 09:00-18:00</p>
+                            </dd>
+                            <p class="clr"></p>
+                        </dl>
+                        <p class="clr"></p>
+                    </div>
+                </div>
+           <!-------------------------- 真footer -------------------------------------------->
+            <div id="footer" style="height:250px;">
+                <div class="wrap">
+                    <div class="footLeft fl">
+                        <a style="display:block;height:44px;width:196px;" href="#" target="_blank">
+                            <div class="download">
+                                
+                                <p class="iPhone">
+                                    <span class="numLeFont">iPhone Android</span>
+                                </p>
+                                <p class="client-down">客户端下载</p>
+                                <div class="download-code">
+                                    <dl class="iPhone">
+                                        <dt></dt>
+                                        <dd>下载iPhone版</dd>
+                                    </dl>
+                                    <dl class="android">
+                                        <dt></dt>
+                                        <dd>下载Android版</dd>
+                                    </dl>
+                                    <p class="clr"></p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="friendly">
+                            <p class="toplink">
+                                <a href="#" target="_blank" class="first">关于良仓</a>
+                                <a href="#" target="_blank" rel="nofollow">服务协议</a>
+                                <a href="#" target="_blank" rel="nofollow">隐私保护政策</a>
+                                <a href="#" target="_blank" rel="nofollow">使用指南</a>
+                                <a href="#" target="_blank" rel="nofollow">联系我们</a>
+                                <a href="#" target="_blank" rel="nofollow">加入我们</a>
+                                <a href="#" target="_blank" rel="nofollow">友情链接</a>
+                                <a href="#" class="contactUs">私信良仓</a>
+                            </p>
+                            <p>
+                                <span class="numLeFont">©</span>
+                                &nbsp;2013-2019 北京良仓文化传播有限公司版权所有&nbsp;京
+                                <span class="numLeFont">ICP</span>
+                                备
+                                <span class="numLeFont">13010677</span>
+                                号
+                                <span class="numLeFont">-1</span>
+                                &nbsp;京公网安备<span class="numLeFont">11010502025627</span>
+                            </p>
+                            <p>&nbsp;&nbsp;公司名称：北京良仓文化传播有限公司&nbsp;&nbsp;电话：010-58263516</p>
+                            <p>&nbsp;&nbsp;公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+                            <p>&nbsp;&nbsp;社会信用统一代码：91110105059231575L&nbsp;&nbsp;食品许可证：JY11105160159557&nbsp;&nbsp;</p>
+                            <p>&nbsp;&nbsp;图书证名称：中华人民共和国出版物经营许可证&nbsp;&nbsp;图书证编号：新出发京零 字第 朝 150051
+                                号&nbsp;&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/1.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/baidu.js"></script>
+<script>
+    // 轮播js
+    var mySwiper = new Swiper ('.swiper-container', {
+    // direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay:true,
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  })       
+</script>
+<script>
+    // 购物车下拉列表
+   $(".header-wrapper").mouseenter(function () { 
+        $(".header-wrapper-1").show();
+        $(".header-wrapper").css({
+            color:"#fff"
+        });
+   });
+   $(".header-wrapper").mouseleave(function () { 
+        $(".header-wrapper-1").hide();
+        $(".header-wrapper").css({
+            color:"#666"
+        });
+   });
+   $(".header-wrapper-1").mouseenter(function () { 
+        $(".header-wrapper-1").show();
+        $(".header-wrapper").css({
+            color:"#fff"
+        });
+   });
+   $(".header-wrapper-1").mouseleave(function () { 
+        $(".header-wrapper-1").hide();
+        $(".header-wrapper").css({
+            color:"#666"
+        });
+   });
+
+   //信息下拉列表
+   $(".posr").mouseenter(function () { 
+        $(".header-hide").show();
+        $(".posr").css({
+            color:"#fff"
+        });
+   });
+   $(".posr").mouseleave(function () { 
+        $(".header-hide").hide();
+        $(".posr").css({
+            color:"#666"
+        });
+   });
+   $(".header-hide").mouseenter(function () { 
+        $(".header-hide").show();
+        $(".posr").css({
+            color:"#fff"
+        });
+   });
+   $(".header-hide").mouseleave(function () { 
+        $(".header-hide").hide();
+        $(".posr").css({
+            color:"#666"
+        });
+   });
+
+   //二级导航杂志
+   $(".s1").mouseenter(function () { 
+            $("#s1").show();
+            $(".s1").css({
+                "borderBottom": "4px solid #141414"
+            });
+       });
+       $(".s1").mouseleave(function () { 
+            $("#s1").hide();
+            $(".s1").css({
+                "borderBottom": "4px solid #ededed"
+            });
+       });
+       $("#s1").mouseenter(function () { 
+            $("#s1").show();
+            $(".s1").css({
+                "borderBottom": "4px solid #141414"
+            });
+       });
+       $("#s1").mouseleave(function () { 
+            $("#s1").hide();
+            $(".s1").css({
+                "borderBottom": "4px solid #ededed"
+            });
+       });
+    
+       //二级导航分享
+       $(".s2").mouseenter(function () { 
+            $("#s2").show();
+            $(".s2").css({
+                "borderBottom": "4px solid #141414"
+            });
+       });
+       $(".s2").mouseleave(function () { 
+            $("#s2").hide();
+            $(".s2").css({
+                "borderBottom": "4px solid #ededed"
+            });
+       });
+       $("#s2").mouseenter(function () { 
+            $("#s2").show();
+            $(".s2").css({
+                "borderBottom": "4px solid #141414"
+            });
+       });
+       $("#s2").mouseleave(function () { 
+            $("#s2").hide();
+            $(".s2").css({
+                "borderBottom": "4px solid #ededed"
+            });
+       });
+
+    //二级导航商店
+    $(".subLi3").mouseenter(function () { 
+        $(".store").show();
+        $(".subLi3").css({
+            "borderBottom": "4px solid #141414"
+        });
+   });
+   $(".subLi3").mouseleave(function () { 
+        $(".store").hide();
+        $(".subLi3").css({
+            "borderBottom": "4px solid #ededed"
+        });
+   });
+   $(".store").mouseenter(function () { 
+        $(".store").show();
+        $(".subLi3").css({
+            "borderBottom": "4px solid #141414"
+        });
+   });
+   $(".store").mouseleave(function () { 
+        $(".store").hide();
+        $(".subLi3").css({
+            "borderBottom": "4px solid #ededed"
+        });
+   });
+
+//固定导航删除
+
+$(".section_img1_a").on("click",function(){
+    $(".section_img1_a").parent().remove();
+})
+
+//返回顶部
+$(".section_img2").on("click",function(){
+    $('body,html').animate({
+        scrollTop: '0px'
+     }, 900);
+})
+
+</script>
+
+</html>

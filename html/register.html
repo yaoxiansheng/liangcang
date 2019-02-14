@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/liangcang.css">
+</head>
+<body class="log_regBody">
+    <div class="fullscreen"></div>
+<div class="layerMask"></div>
+<div id="main">
+                  <form action="#" method="post" id="uregForm" name="uregForm" autocomplete="off">
+            <table class="regTable" style="position: relative; margin-top: -70px;">
+                <tbody><tr valign="center" >
+                    <td colspan="3" height="160"><a href="../html/index1.html"><img src="../img/logo_icon.png" class="logoLC"></a></td>
+                </tr>
+                <tr valign="middle" height="50">
+                    <th  class="regLabel" >用户名</th>
+                    <td  width="270"><input type="text" class="regInpt innerPro" id="username" name="mobile_phone" ><label class="inputPH" for="pwd"></label></td>
+                    <td > </td>
+                </tr>
+                <!-- <tr valign="middle" height="50" id="authcodeDiv">
+                    <th align="left" class="regLabel">验证码</th>
+                    <td align="left">
+                        <input type="text" class="regInptCode innerPro" name="authcode" id="authcode" maxlength="4" oninput="HideAuthCode(this)" onpropertychange="HideAuthCode(this)">
+                        <img src="../img/saved_resource" id="authimg" align="absmiddle">
+                    </td>
+                    <td align="left"> <a href="javascript:;" onclick="getnewimg();" class="nextVert">看不清，换一张</a> </td>
+                </tr> -->
+                <tr valign="middle" height="50" style="display:none;" id="PhoneCodeDiv">
+                    <th  class="regLabel" style="padding-right:6px;">手机验证码</th>
+                    <td > 
+                        <div class="codeInput" style="border: none;background: none;">
+                          <input type="text" name="chkPhoneCode" id="chkPhoneCode" class="innerPro" autocomplete="off" value="" style="height: 53px;">
+                      </div>
+                      
+                     <input type="button" class="mobile_button" id="mobile_button"  style="width: 105px;" value="免费获取验证码">
+                      
+                    </td>
+                </tr>
+                <tr valign="middle" height="50">
+                    <th  class="regLabel">创建密码</th>
+                    <td  width=""><input type="password" class="regInpt innerPro" id="password" name="pwd"><label class="inputPH" for="pwd" style="display: block;"></label></td>
+          
+                <tr valign="middle" height="50">
+                    <th  class="regLabel">密码确认</th>
+                    <td  width=""><input type="password" class="regInpt innerPro" id="repwd" name="repwd" autocomplete="off"><label class="inputPH" for="repwd" style="display: block;"></label></td>
+                    <td > </td>
+                </tr>
+                <tr valign="center" height="50">
+                    <th > </th>
+                    <td> 
+                        <div class="agreeLC">
+                            <input type="checkbox" checked="checked" id="ourtreaty" class="vertPos"><label for="ourtreaty" style="padding-left:6px;color:#ffffff;" class="vertPos">同意</label><a href="#" style="color:#0c79cc;" class="vertPos" target="_blank">&nbsp;良仓注册条款</a>
+                        </div>	
+                    </td>
+                </tr>
+                <tr valign="center" >
+                    <th > </th>
+                    <td  width="">
+                      <input type="hidden" name="act" value="useradd">
+                      <input type="hidden" name="sex" value="0">
+                      <input type="hidden" name="invite_uid" value="0">
+                        <input class="regBtn" type="button" value="立即注册" > &nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+                <tr valign="center" >
+                    <th > </th>
+                  <td >
+                  <a href="#" class="quikLoginIcon icon_QQ_36" title="QQ"></a>
+                  <a href="#" class="quikLoginIcon icon_sina_36" title="新浪微博"></a>
+                  <a href="#" class="quikLoginIcon icon_douban_36" title="豆瓣"></a>
+                  <a href="#" class="quikLoginIcon icon_qqwb_36" title="腾讯微博"></a>
+                  </td>
+                  <td >
+                    <a href="http://localhost/liangcang/html/login.html" class="regLC regPos" id="regLC">登录良仓</a>
+                  </td>
+              </tr>
+            </tbody></table>
+      </form>
+     
+    </div>
+    <script>
+
+      
+         //获取标签 
+      var frome = document.querySelector("#uregForm");
+      var username = document.querySelector("#username");
+      var password = document.querySelector("#password");
+      var submit = document.querySelector(".regBtn");
+      
+    //   console.log(frome,username,password,submit);
+     
+      //阻止默认事件
+      frome.onsubmit = function(even){
+            var e = even || window.event;
+            e.preventDefault();
+      }
+
+      //点击注册
+      submit.addEventListener("click",submitclick);
+      function submitclick(){
+        var repwd = document.querySelector("#repwd").value;
+        var pwd = password.value;
+      console.log(repwd,pwd);
+        if(pwd !== repwd || pwd == "" || repwd == "" ) return false;
+            //声明参数
+            var _name = username.value;
+            var _pass = password.value;
+            
+            //路径
+           var url = "http://127.0.0.1/liangcang/php/register.php";
+
+            //把值变成对象
+            var data = {
+                  username : _name,
+                  password : _pass
+            }
+            console.log(data);
+            ajaxpost(url,data).then(function(res){
+                  console.log(res);
+            });
+      }
+      //ajax
+     function ajaxpost(url, data) {
+            
+            return new Promise(function (resolve, reject) {
+                  var xhr = new XMLHttpRequest();
+                  xhr.open("POST", url);
+                  
+                  //声明请求头
+                  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                  //数值拼接
+                  var data_str = "";
+                  for (var attr in data) {
+                        if (data_str.length !== 0) {
+                              data_str += "&";
+                        }
+                        data_str += attr + "=" + data[attr];
+                  }
+                  // console.log(data_str);
+                  //发送
+                  xhr.send(data_str);
+                  console.log(1);
+                  //监听
+                  xhr.onreadystatechange = function () {
+                        if(xhr.readyState === 4 && xhr.status === 200){
+                                    resolve(xhr.response);
+                        }
+                  }
+            })
+      }
+    </script>
+</html>
